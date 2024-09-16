@@ -1,14 +1,18 @@
 # Physics-Informed Neural Networks for Heat Transfer
 
 
-In recent years, Physics-Informed Neural Networks[1] are applied to various types of application tasks. 
-This example shows how to train a neural network using data calculated with partial differential equations(PDEs), and heat equation as loss function to predict temperature distributions.
+In recent years, Physics-Informed Neural Networks[1] have been applied to various types of application tasks. 
+This example shows how to train a neural network to predict temperature distributions given new initial and boundary conditions. The neural network was trained using a loss function that includes a data loss component, which measures the discrepancy between the network's predictions and targets derived from finite element simulations, as well as a physics-informed loss component that evaluates the residual of the governing partial differential equation (PDE). 
 
-<img src="https://github.com/matlab-deep-learning/Physics-Informed-Neural-Networks-for-Heat-Transfer/blob/main/ref_images/Results.png" width="720">
+<img src="https://insidelabs-git.mathworks.com/tfukumot/physics-informed-neural-networks-for-heat-transfer/-/raw/main/ref_images/Results.png" width="720">
 
-Here is the Heat equation used in loss function
+The PDE used in the loss function is the transient heat equation:
 
-<img src="https://github.com/matlab-deep-learning/Physics-Informed-Neural-Networks-for-Heat-Transfer/blob/main/ref_images/HeatEquation.png" width="360">
+<img src="https://insidelabs-git.mathworks.com/tfukumot/physics-informed-neural-networks-for-heat-transfer/-/raw/main/ref_images/HeatEquation.png" width="360">
+
+
+## **How to get started**
+To get started, clone this repository and run "Example_pinn.mlx".
 
 
 ## **Requirements**
@@ -25,15 +29,6 @@ MATLAB version should be R2024a and later (Tested in R2024a)
 
 ## **License**
 The license is available in license.txt file in this GitHub repository.
-
-## Author:
-![Image of MATLAB](http://www.mathworks.com/includes_content/nextgen/images/bg_header_mwlogo_notag.jpg)
-
-### Takuji Fukumoto
-Product Marketing, MathWorks
-
-### Ben Wells-Day
-Language of Tech. Computing, MathWorks
 
 
 Copyright (c) 2024, The MathWorks, Inc.
