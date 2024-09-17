@@ -4,11 +4,11 @@
 In recent years, Physics-Informed Neural Networks[1] have been applied to various types of application tasks. 
 This example shows how to train a neural network to predict temperature distributions given new initial and boundary conditions. The neural network was trained using a loss function that includes a data loss component, which measures the discrepancy between the network's predictions and targets derived from finite element simulations, as well as a physics-informed loss component that evaluates the residual of the governing partial differential equation (PDE). 
 
-<img src="https://insidelabs-git.mathworks.com/tfukumot/physics-informed-neural-networks-for-heat-transfer/-/raw/main/ref_images/Results.png" width="720">
+<img src="https://github.com/matlab-deep-learning/physics-informed-neural-networks-for-heat-transfer/blob/main/ref_images/Results.png" width="720">
 
 The PDE used in the loss function is the transient heat equation:
 
-<img src="https://insidelabs-git.mathworks.com/tfukumot/physics-informed-neural-networks-for-heat-transfer/-/raw/main/ref_images/HeatEquation.png" width="360">
+<img src="https://github.com/matlab-deep-learning/physics-informed-neural-networks-for-heat-transfer/blob/main/ref_images/HeatEquation.png" width="360">
 
 
 ## **How to get started**
@@ -30,6 +30,8 @@ MATLAB version should be R2024a and later (Tested in R2024a)
 ## **License**
 The license is available in license.txt file in this GitHub repository.
 
+## **Open in MATLAB Online**
+[![Open in MATLAB Online](https://www.mathworks.com/images/responsive/global/open-in-matlab-online.svg)](https://matlab.mathworks.com/open/github/v1?repo=matlab-deep-learning/Physics-Informed-Neural-Networks-for-Heat-Transfer)
 
 Copyright (c) 2024, The MathWorks, Inc.
 
